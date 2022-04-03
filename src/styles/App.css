@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #d4f1f4;
+  font-family: Arial, sans-serif;
+}
+
+.browse-robots-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

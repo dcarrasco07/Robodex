@@ -1,12 +1,18 @@
 import { createAvatar } from "@dicebear/avatars";
 import * as style from "@dicebear/avatars-bottts-sprites";
 
-export const createMyAvatar = (name, options) => {
+export const createMyAvatar = (
+  seed,
+  colors,
+  primaryColorLevel,
+  secondaryColorLevel
+) => {
   const svg = createAvatar(style, {
-    seed: name,
-    // ... and other options
+    seed,
+    colors,
+    primaryColorLevel,
+    secondaryColorLevel,
   });
 
-  console.log(svg);
   return svg;
 };

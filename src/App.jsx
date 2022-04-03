@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import Avatar from "./components/avatar.jsx";
+import BrowseRobots from "./pages/browse.jsx";
+import "./styles/App.css";
 
 class App extends Component {
   state = {};
   render() {
     return (
       <React.Fragment>
-        <h1>Hello World!</h1>
-        <Avatar></Avatar>
+        <div className="browse-robots-container">
+          <BrowseRobots></BrowseRobots>
+        </div>
       </React.Fragment>
     );
   }
