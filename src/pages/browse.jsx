@@ -6,7 +6,12 @@ import "../styles/browse.css";
 class BrowseRobots extends Component {
   state = {};
   render() {
-    return this.renderDefaultBotList();
+    return (
+      <React.Fragment>
+        <div className="banner">BROWSE ROBOTS</div>
+        {this.renderDefaultBotList()}
+      </React.Fragment>
+    );
   }
 
   /*
@@ -24,10 +29,10 @@ class BrowseRobots extends Component {
             primaryColorLevel={bot.primaryColorLevel}
             secondaryColorLevel={bot.secondaryColorLevel}
           ></Avatar>
-          <div key={bot.seed} className="name-container">
+          <div key={bot.seed + "1"} className="name-container">
             <span>{bot.seed}</span>
           </div>
-          <div key={bot.seed} className="description-container">
+          <div key={bot.seed + "2"} className="description-container">
             <span>{bot.description}</span>
           </div>
         </div>
